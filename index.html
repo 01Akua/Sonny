@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <canvas id="sunflowerCanvas" aria-hidden="true"></canvas>
+        <canvas id="sparkleCanvas" aria-hidden="true"></canvas>
+        <div class="welcome-content">
+            <h1>Sonia, ¡Feliz Día! 🌹</h1>
+            <p>Tengo algo especial para ti...</p>
+            <button id="reveal-btn">Hacer clic para ver</button>
+        </div>
+    </div>
+
+    <div id="heart-container" class="hidden">
+        <canvas id="heartCanvas"></canvas>
+        <div id="message-overlay" class="hidden">
+            <div class="message-overlay-backdrop" aria-hidden="true"></div>
+            <div class="card">
+                <h2>Para <span class="name">Sonia</span></h2>
+                <p id="typed-text"></p>
+                <button id="close-msg">Con cariño</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
